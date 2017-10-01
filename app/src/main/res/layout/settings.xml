@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:background="#282828">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Guardian Information"
+        android:textColor="#AFB7C2"
+        android:id="@+id/textView3"
+        android:layout_marginTop="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/phoneno1"
+        android:textColorHint="#a3a375"
+        android:hint="Phone NO"
+        android:textAlignment="center"
+        android:background="@drawable/apptheme_textfield_activated_holo_light"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="32dp"
+        android:layout_alignRight="@+id/update"
+        android:layout_alignEnd="@+id/update"
+        android:layout_alignLeft="@+id/update"
+        android:layout_alignStart="@+id/update" />
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="55sp"
+        android:background="@drawable/backbut2"
+        android:textColor="#f7fcf9"
+        android:text="Update"
+        android:id="@+id/update"
+
+        android:layout_below="@+id/phoneno1"
+        android:layout_alignLeft="@+id/cal"
+        android:layout_alignStart="@+id/cal"
+        android:layout_marginTop="55dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Calibrated Value :"
+        android:gravity="center_vertical"
+        android:id="@+id/calvalue"
+        android:textColor="#AFB7C2"
+        android:textSize="25sp"
+        android:layout_marginBottom="41dp"
+        android:layout_above="@+id/cal"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Add Your Country Code Before Phone No"
+        android:gravity="center"
+        android:layout_below="@+id/phoneno1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="55sp"
+        android:background="@drawable/backbut2"
+        android:textColor="#f7fcf9"
+        android:text="Calibrate"
+
+        android:id="@+id/cal"
+        android:layout_marginBottom="34dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

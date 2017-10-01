@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/frameLayout"
+        android:paddingTop="5dp"
+        android:background="#282828"
+        >
+
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/snackbarPosition2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            >
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_height="match_parent"
+                android:id="@+id/graph"
+                app:seriesType="bar"
+                app:seriesColor="#f49e00"
+
+                android:layout_gravity="center_horizontal|bottom"
+                />
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:popupTheme="@style/AppTheme.PopupOverlay"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:background="#191919"
+        android:id="@+id/frameLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="300sp"
+            android:layout_height="55sp"
+            android:background="@drawable/backbut2"
+            android:text="Stop"
+            android:id="@+id/button2"
+
+            android:textColor="#f49e00"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <Button
+            android:layout_width="300sp"
+            android:layout_height="55sp"
+            android:background="@drawable/backbut2"
+            android:textColor="#f49e00"
+            android:text="Start"
+            android:id="@+id/button"
+
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|bottom" />
+    </FrameLayout>
+
+</RelativeLayout>

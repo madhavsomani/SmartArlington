@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="#24313C"
+
+
+
+    >
+
+
+
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:padding="2dp"
+
+        android:background="#B3cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_alignParentBottom="true">
+
+
+
+
+        <EditText
+            android:paddingLeft="4dp"
+            android:hint="Text here"
+            android:padding="10dp"
+            android:layout_margin="3dp"
+            android:id="@+id/edittype"
+            android:layout_width="0dp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:background="@drawable/message_edit_text"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.8" />
+
+        <ImageView
+            android:padding="9dp"
+            android:background="@drawable/message_button_main"
+            android:layout_margin="2dp"
+            android:id="@+id/sendbutton"
+            android:layout_width="0dp"
+            android:onClick="messagesend"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.45"
+            android:clickable="true"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/ic_send_white_24dp" />
+
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alerlsitview"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/form" />
+</RelativeLayout>
