@@ -122,7 +122,7 @@ public class home extends Fragment implements SensorEventListener {
                 View view = snack.getView();
                 TextView tv = (TextView) view.findViewById(android.support.design.R.id.snackbar_text);
                 tv.setTextColor(Color.parseColor("#FFFFFF"));
-                tv.setGravity(Gravity.CENTER_HORIZONTAL);
+                tv.setGravity(Gravity.CENTER);
                 snack.show();
 
 
